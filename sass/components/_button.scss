@@ -1,0 +1,21 @@
+@use '../common';
+@use '../base';
+.button {
+  display: inline-block;
+  border-radius: common.rem(8);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  @include common.text-style(common.$color-white, 700, common.rem(14), 100% );
+  background-color: common.$color-grey;
+  padding: common.rem(15) common.rem(30);
+  text-align: center;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    background-color: common.$color-neon;
+    color: common.$color-grey;
+    transition: all 0.4s ease-in-out;
+  }
+}

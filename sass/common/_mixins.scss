@@ -1,0 +1,13 @@
+@mixin responsive($min-width) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin text-style($color, $font-weight, $font-size, $line-height) {
+  font-family: 'Inter', sans-serif;
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}

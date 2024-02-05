@@ -1,0 +1,43 @@
+@use '../base';
+@use '../common';
+
+
+.user-profile {
+  background-color: common.$color-dark-grey;
+
+  border-radius: 8px;
+  max-width: 384px;
+  max-height: 611px;
+  padding: 24px;
+
+  @include common.responsive(common.rem(600)) {
+    padding: common.rem(40);
+  }
+
+  &__avatar {
+    display: block;
+    border-radius: 100px;
+    height: 88px;
+    width: 88px;
+  }
+
+  &__name {
+    @include common.text-style(common.$color-white, 600, common.rem(24), 150%);
+  }
+
+  &__location {
+    @include common.text-style(common.$color-neon, 700, common.rem(14), 150%);
+  }
+
+  &__intro {
+    @include common.text-style(common.$color-white, 400, common.rem(14), 150%);
+  }
+
+  &__social-link-list {
+    list-style: none;
+
+    &__item {
+
+    }
+  }
+}

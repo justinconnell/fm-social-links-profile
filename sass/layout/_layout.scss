@@ -1,0 +1,32 @@
+// Blocks live here
+@use '../base';
+@use '../common';
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.user-profile {
+  width: common.rem(327);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 24px;
+
+  @include common.responsive(common.rem(600)) {
+    width: common.rem(384);
+  }
+
+  &__social-link-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+  }
+}

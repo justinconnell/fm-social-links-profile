@@ -1,6 +1,5 @@
-@use '../base';
-@use '../common';
-
+@use "../base";
+@use "../common";
 
 .user-profile {
   background-color: common.$color-dark-grey;
@@ -19,25 +18,25 @@
     border-radius: 100px;
     height: 88px;
     width: 88px;
+    margin: 0 auto;
   }
 
   &__name {
     @include common.text-style(common.$color-white, 600, common.rem(24), 150%);
+    text-align: center;
   }
 
   &__location {
     @include common.text-style(common.$color-neon, 700, common.rem(14), 150%);
+    text-align: center;
   }
 
   &__intro {
     @include common.text-style(common.$color-white, 400, common.rem(14), 150%);
+    text-align: center;
   }
 
   &__social-link-list {
     list-style: none;
-
-    &__item {
-
-    }
   }
 }
